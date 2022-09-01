@@ -1,1 +1,30 @@
-<p>admin-user works!</p>
+<h2 class="text-center">Usuarios</h2>
+<hr>
+
+  <form action="">
+    <div class="row">
+      <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-success">Agregar</button>
+      </div>
+    </div>
+
+  </form>
+
+  <br>
+  <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Comentario</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.userId }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.comment }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
