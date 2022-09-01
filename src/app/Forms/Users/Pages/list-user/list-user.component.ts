@@ -15,10 +15,8 @@ export class ListUserComponent implements OnInit {
   constructor(private userService: UserService, public loaderService: LoaderService) { }
 
   ngOnInit(): void {
-    this.userService.list().subscribe((data: any[]) => {
-      data.forEach(element => {
-        console.log(element)
-      });
+    this.userService.list().subscribe((data: any) => {
+      this.commentsList.push(data.result);
       console.log(this.commentsList);
       this.commentsList = [];
     });
