@@ -10,16 +10,27 @@ import { LoaderService } from 'src/app/services/loader.service';
 })
 export class ListUserComponent implements OnInit {
 
-  commentsList: User[] = []
+  responseResult: any[] = []
+  commentList: any[] = []
 
   constructor(private userService: UserService, public loaderService: LoaderService) { }
 
   ngOnInit(): void {
     this.userService.list().subscribe((data: any) => {
-      this.commentsList.push(data.result);
-      console.log(this.commentsList);
-      this.commentsList = [];
+      this.responseResult = data.result;
+      console.log(this.responseResult)
+      this.commentList = this.responseResult;
+      this.responseResult = [];
     });
-}
+  }
+
+  public listComments(): void{
+    this.userService.list().subscribe((data: any) => {
+      this.responseResult = data.result;
+      console.log(this.responseResult)
+      this.commentList = this.responseResult;
+      this.responseResult = [];
+    });
+  }
 
 }

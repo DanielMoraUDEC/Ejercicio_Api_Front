@@ -1,7 +1,24 @@
 <div *ngIf="loaderService.isLoading | async" class="loader-container">
-    <div class="progress">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-            aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-            style="width: 75%"></div>
+    <div class="demo-container">
+        <div class="progress-bar">
+            <div class="progress-bar-value"></div>
+        </div>
+    </div>
+</div>
+
+<h2>Últimos comentarios</h2>
+<hr>
+<div *ngIf="commentList.length">
+    <div class="warpper" *ngFor="let userComment of commentList">
+        <div class="panels">
+            <div class="row">
+                <div class="row">
+                    <h5>{{ userComment.name }} dice: </h5>
+                </div>
+                <br>
+                <h3>{{ userComment.comment }}</h3>
+            </div>
+        </div>
+        <br>
     </div>
 </div>

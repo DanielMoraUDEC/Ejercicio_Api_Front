@@ -22,19 +22,19 @@ export class AdminUserComponent implements OnDestroy, OnInit {
     this.GetUsers();
   }
 
-  GetUsers(){
-    try{
+  GetUsers() {
+    try {
 
       this.dtOptions = {
         pagingType: 'full_numbers',
         pageLength: 2
       };
 
-      this.userService.getUsers().subscribe((data:any)=>{
-         this.users = data.result;
-         this.dtTrigger.next(0);
+      this.userService.getUsers().subscribe((data: any) => {
+        this.users = data.result;
+        this.dtTrigger.next(0);
       });
-    }catch(err){
+    } catch (err) {
       console.log(err)
     }
   }

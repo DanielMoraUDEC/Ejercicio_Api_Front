@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './Shared/shared.module';
 import { FormsModule } from './Forms/forms.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 import { InterceptorService } from './services/interceptor.service';
 import { ListUserComponent } from './Forms/Users/Pages/list-user/list-user.component';
 
@@ -18,7 +20,9 @@ import { ListUserComponent } from './Forms/Users/Pages/list-user/list-user.compo
     AppRoutingModule,
     SharedModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
