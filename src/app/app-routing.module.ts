@@ -6,14 +6,13 @@ import { ListUserComponent } from './Forms/Users/Pages/list-user/list-user.compo
 
 const routes: Routes = [
   {
-    path:'admin',
+    path:'',
     component: ListUserComponent,
     pathMatch: 'full'
   },
   {
-    path:'',
+    path:'users',
     component: AdminUserComponent,
-    pathMatch: 'full'
   },
   {
     path: '**',

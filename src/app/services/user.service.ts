@@ -8,7 +8,7 @@ import { User } from '../models/user.model';
 })
 export class UserService {
 
-  url = environment.HOST + 'GetUsers'
+  url = environment.HOST + '/GetUsers'
 
   constructor(private http: HttpClient) { }
 
