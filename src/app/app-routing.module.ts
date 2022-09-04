@@ -13,6 +13,9 @@ const routes: Routes = [
   {
     path:'users',
     component: AdminUserComponent,
+  },{
+    path:'create',
+    component: CreateUserComponent,
   },
   {
     path: '**',

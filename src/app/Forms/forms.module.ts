@@ -20,7 +20,8 @@ import { ListUserComponent } from './Users/Pages/list-user/list-user.component';
     DataTablesModule
   ], exports : [
     AdminUserComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    ListUserComponent
   ]
 })
 export class FormsModule { }
