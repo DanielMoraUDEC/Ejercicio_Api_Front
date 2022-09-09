@@ -1,0 +1,15 @@
+<div class="row">
+    <form>
+        <div class="form-group">
+            <label for="name">Nombre de usuario</label>
+            <input type="text" class="form-control" #name name="name" id="name" placeholder="Ej:Pepito" formControlName="name">
+            <small class="form-text text-muted">El nombre de usuario es único</small>
+        </div>
+        <div class="form-group">
+            <label for="comment">Comentario</label>
+            <input type="text" class="form-control" #comment name="comment" id="comment" placeholder="Ej: Pablito clavó un clavito...">
+            <small class="form-text text-muted">Escriba un comentario que se le ocurra</small>
+        </div>
+        <button (click)="createUser()" type="submit" class="btn btn-primary btn-sm">Guardar</button>
+    </form>
+</div>
