@@ -31,7 +31,7 @@ export class CreateUserComponent implements OnInit {
 
     this.userService.save(u).subscribe(success => {
       console.log(success)
-      this.router.navigate([''])
+      //this.router.navigate(['/'])
     })
   }
 }
