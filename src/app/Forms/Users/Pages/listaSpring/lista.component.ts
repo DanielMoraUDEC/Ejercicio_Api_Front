@@ -51,6 +51,7 @@ export class ListaComponent implements OnInit {
     if(resultado){
       this.userService.delete(id).subscribe(data=>{
         console.log(data);
+        window.location.reload();
       });
     }
     
