@@ -1,0 +1,133 @@
+.loader-container {
+    position: fixed;
+}
+
+.demo-container {
+    width: 300px;
+    margin: auto;
+}
+
+.progress-bar {
+    height: 4px;
+    background-color: rgba(5, 114, 206, 0.2);
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress-bar-value {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(5, 114, 206);
+    animation: indeterminateAnimation 1s infinite linear;
+    transform-origin: 0% 50%;
+}
+
+@keyframes indeterminateAnimation {
+    0% {
+        transform: translateX(0) scaleX(0);
+    }
+
+    40% {
+        transform: translateX(0) scaleX(0.4);
+    }
+
+    100% {
+        transform: translateX(100%) scaleX(0.5);
+    }
+}
+
+.row {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    max-width: 8.33333%;
+
+    flex: 0 0 8.33333%;
+}
+
+.col-2 {
+    max-width: 16.66667%;
+
+    flex: 0 0 16.66667%;
+}
+
+.col-3 {
+    max-width: 25%;
+
+    flex: 0 0 25%;
+}
+
+.col-4 {
+    max-width: 33.33333%;
+
+    flex: 0 0 33.33333%;
+}
+
+.col-5 {
+    max-width: 41.66667%;
+
+    flex: 0 0 41.66667%;
+}
+
+.col-6 {
+    max-width: 50%;
+
+    flex: 0 0 50%;
+}
+
+.col-7 {
+    max-width: 58.33333%;
+
+    flex: 0 0 58.33333%;
+}
+
+.col-8 {
+    max-width: 66.66667%;
+
+    flex: 0 0 66.66667%;
+}
+
+.col-9 {
+    max-width: 75%;
+
+    flex: 0 0 75%;
+}
+
+.col-10 {
+    max-width: 83.33333%;
+
+    flex: 0 0 83.33333%;
+}
+
+.col-11 {
+    max-width: 91.66667%;
+
+    flex: 0 0 91.66667%;
+}
+
+.col-12 {
+    max-width: 100%;
+
+    flex: 0 0 100%;
+}
+
+.warpper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.panels {
+    background: #fffffff6;
+    box-shadow: 0 1rem 1rem #00000080;
+    min-height: 200px;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 20px;
+}

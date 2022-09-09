@@ -10,10 +10,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { InterceptorService } from './services/interceptor.service';
 import { ListUserComponent } from './Forms/Users/Pages/list-user/list-user.component';
+import { ListaComponent } from './Forms/Users/Pages/listaSpring/lista.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ListaComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,7 @@ import { ListUserComponent } from './Forms/Users/Pages/list-user/list-user.compo
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

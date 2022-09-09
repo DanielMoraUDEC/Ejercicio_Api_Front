@@ -1,0 +1,27 @@
+<div *ngIf="loaderService.isLoading | async" class="loader-container">
+    <div class="demo-container">
+        <div class="progress-bar">
+            <div class="progress-bar-value"></div>
+        </div>
+    </div>
+</div>
+
+<h2>Últimos comentarios</h2>
+<hr>
+<div *ngIf="responseResult.length">
+    <div class="warpper" *ngFor="let userComment of responseResult">
+        <div class="panels">
+            <div class="row">
+                <div class="row">
+                    <h5>{{ userComment.name }} dice: </h5>
+                </div>
+                <br>
+                <h3>{{ userComment.comment }}</h3>
+            </div>
+            <div >
+                <button style="color: red;" (click)="eliminar(userComment.userId)"> eliminar</button>
+            </div>
+        </div>
+        <br>
+    </div>
+</div>

@@ -5,6 +5,7 @@ import { CreateUserComponent } from './Users/Pages/create-user/create-user.compo
 import { SharedModule } from '../Shared/shared.module';
 import { DataTablesModule } from "angular-datatables";
 import { ListUserComponent } from './Users/Pages/list-user/list-user.component';
+import { AgregarSpringComponent } from './Users/Pages/agregar-spring/agregar-spring.component';
 
 
 
@@ -12,7 +13,8 @@ import { ListUserComponent } from './Users/Pages/list-user/list-user.component';
   declarations: [
     AdminUserComponent,
     CreateUserComponent,
-    ListUserComponent
+    ListUserComponent,
+    AgregarSpringComponent
   ],
   imports: [
     CommonModule,
